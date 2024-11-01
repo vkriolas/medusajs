@@ -43,9 +43,12 @@ export default defineConfig({
         settings: {
           products: {
             indexSettings: {
-              searchableAttributes: ["title", "description", "variant_sku"],
+              searchableAttributes: [
+                "title", 
+                "description", 
+                "variant_sku"
+              ],
               displayedAttributes: [
-                "id",
                 "title",
                 "description",
                 "variant_sku",
@@ -54,11 +57,20 @@ export default defineConfig({
               ],
             },
             primaryKey: "id",
+            transformer: (product) => ({
+              id: product.id,
+              title: product.title,
+              description: product.description,
+              variant_sku: product.variant_sku,
+              thumbnail: product.thumbnail,
+              handle: product.handle,
+              // include other attributes as needed
+            }),
           },
         },
       },
     },
-  ],
+  },
   admin: {
     backendUrl: "http://localhost:9000",
   },
