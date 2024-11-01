@@ -1,5 +1,5 @@
 import { Heading } from "@medusajs/ui"
-import Image from "@/public/main-hero.jpg"
+import Image from "../../public/main-hero.jpg"
 
 const Hero = () => {
   return (
