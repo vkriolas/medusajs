@@ -1,32 +1,26 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
+import { Heading } from "@medusajs/ui"
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+    <div 
+      className="h-[75vh] w-full border-b border-ui-border-base relative bg-cover bg-center"
+      style={{ backgroundImage: "url('/main-hero.jpg')", backgroundSize: "cover" }}
+    >
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
             level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
+            className="text-3xl leading-10 text-white font-normal"
           >
-            Well done! You have successfully deployed your Medusa 2.0 store on Railway!
+            Revive the Style, Rewrite Fashion
           </Heading>
           <Heading
-            level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+            level="h3"
+            className="text-3xl leading-10 text-slate-100 font-normal mt-2"
           >
-            Need help customizing your store?
+            Discover unique, vintage pieces that celebrate authenticity and heritage. Let your style shine with the timeless elegance of Kriolas Vintage.
           </Heading>
         </span>
-        <a
-          href="https://funkyton.com/medusajs-2-0-is-finally-here/"
-          target="_blank"
-        >
-          <h1 style={{ textDecoration: "underline" }}>
-            Visit the tutorial
-          </h1>
-        </a>
       </div>
     </div>
   )
