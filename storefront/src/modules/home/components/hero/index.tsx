@@ -23,7 +23,7 @@ const Hero = () => {
             level="h3"
             className="text-3xl leading-10 text-slate-100 font-semibold mt-2"
           >
-            Discover unique, vintage pieces that celebrate authenticity and heritage. Let your style shine with the timeless elegance of Kriolas Vintage.
+            Let your style shine with the timeless elegance of Kriolas Vintage.
           </Heading>
         </span>
       </div>
