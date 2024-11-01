@@ -43,11 +43,7 @@ export default defineConfig({
         settings: {
           products: {
             indexSettings: {
-              searchableAttributes: [
-                "title", 
-                "description", 
-                "variant_sku"
-              ],
+              searchableAttributes: ["title", "description", "variant_sku"],
               displayedAttributes: [
                 "title",
                 "description",
@@ -70,7 +66,7 @@ export default defineConfig({
         },
       },
     },
-  },
+  ],
   admin: {
     backendUrl: "http://localhost:9000",
   },
