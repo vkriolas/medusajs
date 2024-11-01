@@ -117,7 +117,7 @@ jobs:
 
       - name: Setup search in the backend
         working-directory: ../backend
-        run: yarn add medusa-plugin-meilisearch
+        run: yarn add medusa-plugin-meilisearch@latest
 
       - name: Move custom medusa config to the backend
         run: cp .github/scripts/medusa-config.js ../backend/medusa-config.js
